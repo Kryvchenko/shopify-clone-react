@@ -13,10 +13,9 @@ const DetailsHeader = ({ artistId, artistData, songData }) => (
             .replace('{w}', '500')
             .replace('{h}', '500')
             : songData?.images?.coverart
-}
+        }
         className="sm:w-48 w-28 sm:h-48 h-28 rounded-full object-cover border-2 shadow-xl shadow-black"
       />
-
       <div className="ml-5">
         <p className="font-bold sm:text-3xl text-xl text-white">
           {artistId ? artistData?.artists[artistId].attributes?.name : songData?.title}
